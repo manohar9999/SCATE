@@ -16,6 +16,9 @@ code bases, and reporting formats.
 * [lxml](https://pypi.python.org/pypi/lxml)
 * [suds](https://pypi.python.org/pypi/suds-py3)
 
+Install the packages using:
+```pip install -r requirements.txt ```
+
 ## Quick Start
 
 Use the ```--help``` option to see the different command-line options:

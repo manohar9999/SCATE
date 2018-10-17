@@ -1,0 +1,4 @@
+lxml
+pyparsing
+suds-py3
+python-docx
