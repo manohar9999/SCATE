@@ -1,0 +1,12 @@
+<result source="codesonar" args="clean=False|command=build|debug=True|ignore_compile=False|ignore_docgen=False|importfilename=test.filename|outfilename=test.build|server=127.0.0.1|threads=1|tool=codesonar|weaknesses=None">
+  <weakness id="CWE134">
+    <suite dir="/opt/testspace/SCATE/test-cases/NIST_Cpp/testcases/CWE134" tool="make" args="all">
+      <bug filename="CWE134_Uncontrolled_Format_String__char_environment_vprintf_73b.cpp" function="bad_vasink" line="38" probability_info="Use of FormatMessage" details="TP, duplicate in build1.xml.  Aggregation should only count as 1 TP"/>
+      <bug filename="CWE134_Uncontrolled_Format_String__char_environment_vprintf_73b.cpp" function="bad_vasink" line="88" probability_info="WRONG_CHECKER" details="FP due to wrong checker"/>
+      <bug filename="CWE134_Uncontrolled_Format_String__char_console_vprintf_62a.cpp" function="bad_vasink" line="39" probability_info="Use of FormatMessage" details="Right checker, wrong line.  TP for file/function, FP for line"/>
+      <bug filename="CWE134_Uncontrolled_Format_String__char_connect_socket_fprintf_42.c" function="goodG2B_source" line="112" probability_info="Use of strcpy" details="FP, filename not in import"/>
+      <bug filename="io.c" function="goodG2B_source" line="112" probability_info="Use of strcpy" details="Doesn't count at all (TP/FP) because filename doesn't start with CWE"/>
+      <bug filename="CWE134_Uncontrolled_Format_String__char_console_snprintf_52c.c" function="CWE134_Uncontrolled_Format_String__char_console_snprintf_52c_goodB2G_sink" line="63" probability_info="Use of memset" details="No affect on TP/FP.  Correct identification of an incidental flaw"/>
+    </suite>
+  </weakness>
+</result>

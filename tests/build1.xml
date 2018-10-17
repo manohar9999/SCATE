@@ -1,0 +1,11 @@
+<result source="coverity" args="clean=False|command=build|debug=True|ignore_compile=False|ignore_docgen=False|importfilename=test.filename|outfilename=test.build|server=127.0.0.1|threads=1|tool=codesonar|weaknesses=None">
+  <weakness id="CWE134">
+    <suite dir="/opt/testspace/SCATE/test-cases/NIST_Cpp/testcases/CWE134" tool="make" args="all">
+      <bug filename="CWE134_Uncontrolled_Format_String__char_environment_vprintf_73b.cpp" function="bad_vasink" line="38" probability_info="TAINTED_STRING" details="TP, duplicate in build2.xml.  Aggregation should only count as 1 TP"/>
+      <bug filename="CWE134_Uncontrolled_Format_String__char_environment_vprintf_73b.cpp" function="goodG2B_vasink" line="61" probability_info="TAINTED_STRING" details="Right checker in good function.  TP for filename, FP for Function/Line."/>
+      <bug filename="CWE134_Uncontrolled_Format_String__char_environment_vprintf_73b.cpp" function="bad_vasink" line="80" probability_info="WRONG_CHECKER" details="FP, wrong checker"/>
+      <bug filename="CWE134_Uncontrolled_Format_String__char_console_vprintf_62a.cpp" function="bad_vasink" line="30" probability_info="TAINTED_STRING" details="Right checker, wrong line.  TP for file/function.  FP for line."/>
+      <bug filename="CWE134_Uncontrolled_Format_String__char_console_vprintf_62a.cpp" function="goodG2B_vasink" line="66" probability_info="TAINTED_STRING" details="Right checker and line, good function.  TP for filename, FP for function/line."/>
+    </suite>
+  </weakness>
+</result>

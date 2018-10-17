@@ -1,0 +1,15 @@
+<result source="NIST Juliet CPP" args="command=import|debug=True|force_win32=Fal
+se|importsuite=NIST Juliet CPP|outfile=test.file|threads=1|weaknesses=CWE662,CWE482,CWE633,CWE248,CWE119,CWE570,CWE134,CWE481,CWE170,CWE685,CWE606,CWE569,CWE762,CWE465,CWE195,CWE197,CWE457,CWE833,CWE783,CWE401,CWE772,CWE687,CWE483,CWE415,CWE366,CWE590,CWE563,CWE416,CWE681,CWE476,CWE628,CWE459,CWE710,CWE367,CWE243,CWE704,CWE617,CWE456,CWE398,CWE676,CWE835,CWE369,CWE194,CWE480,CWE484,CWE758,CWE561,CWE125,CWE190,CWE404,CWE683,CWE467,CWE667,CWE775,CWE670,CWE377,CWE686,CWE394,CWE253,CWE562,CWE131,CWE672,CWE20,CWE188,CWE665,CWE252,CWE120,CWE129,CWE597,CWE400,CWE764,CWE573">
+  <weakness id="CWE134">
+    <suite dir="/opt/testspace/SCATE/test-cases/NIST_Cpp/testcases/CWE134" tool="make" args="all">
+      <flaw file="CWE134_Uncontrolled_Format_String__char_environment_vprintf_73b.cpp" function="bad_vasink" line="38" severity="2" description="Do not specify the format allowing a possible format string vulnerability"/>
+      <flaw file="CWE134_Uncontrolled_Format_String__char_environment_vprintf_73b.cpp" function="goodG2B_vasink" line="61" severity="2" description="Do not specify the format allowing a possible format string vulnerability"/>
+      <flaw file="CWE134_Uncontrolled_Format_String__char_environment_vprintf_73b.cpp" function="goodB2G_vasink" line="79" severity="4" description="Specify the format disallowing a format string vulnerability"/>
+      <flaw file="CWE134_Uncontrolled_Format_String__char_console_vprintf_62a.cpp" function="bad_vasink" line="39" severity="2" description="Do not specify the format allowing a possible format string vulnerability"/>
+      <flaw file="CWE134_Uncontrolled_Format_String__char_console_vprintf_62a.cpp" function="goodG2B_vasink" line="66" severity="2" description="Do not specify the format allowing a possible format string vulnerability"/>
+      <flaw file="CWE134_Uncontrolled_Format_String__char_console_snprintf_52c.c" function="CWE134_Uncontrolled_Format_String__char_console_snprintf_52c_bad_sink" line="37" severity="2" description="Do not specify the format allowing a possible format string vulnerability"/>
+      <flaw file="CWE134_Uncontrolled_Format_String__char_console_snprintf_52c.c" function="CWE134_Uncontrolled_Format_String__char_console_snprintf_52c_goodG2B_sink" line="52" severity="2" description="Do not specify the format allowing a possible format string vulnerability"/>
+      <flaw file="CWE134_Uncontrolled_Format_String__char_console_snprintf_52c.c" function="CWE134_Uncontrolled_Format_String__char_console_snprintf_52c_goodB2G_sink" line="63" severity="3" description="CWE14 - Specify the format disallowing a format string vulnerability"/>
+    </suite>
+  </weakness>
+</result>

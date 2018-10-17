@@ -1,0 +1,10 @@
+<result source="klocwork" args="clean=False|command=build|debug=True|ignore_compile=False|ignore_docgen=False|importfilename=test.filename|outfilename=test.build|server=127.0.0.1|threads=1|tool=codesonar|weaknesses=None">
+  <weakness id="CWE134">
+    <suite dir="/opt/testspace/SCATE/test-cases/NIST_Cpp/testcases/CWE134" tool="make" args="all">
+      <bug filename="CWE134_Uncontrolled_Format_String__char_console_snprintf_52c.c" function="CWE134_Uncontrolled_Format_String__char_console_snprintf_52c_bad_sink" line="0" probability_info="SV.TAINTED.FMTSTR" details="TP"/>
+      <bug filename="CWE134_Uncontrolled_Format_String__char_console_snprintf_52c.c" function="CWE134_Uncontrolled_Format_String__char_console_snprintf_52c_bad_sink" line="0" probability_info="SV.TAINTED.FMTSTR" details="TP for file (second expected flaw is in the goodG2B_sink method), FP for function/line due to finding more than expected"/>
+      <bug filename="CWE134_Uncontrolled_Format_String__char_connect_socket_fprintf_63a.c" function="CWE134_Uncontrolled_Format_String__char_connect_socket_fprintf_63_bad" line="0" probability_info="SV.TAINTED.FMTSTR" details="TP.  No other tools find this Bug, so it should count."/>
+      <bug filename="CWE134_Uncontrolled_Format_String__char_console_vprintf_62a.cpp" function="bad_vasink" line="0" probability_info="SV.TAINTED.FMTSTR" details="TP.  Should not count on the min report, but should count on the max report"/>
+    </suite>
+  </weakness>
+</result>
