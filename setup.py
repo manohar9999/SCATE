@@ -1,5 +1,11 @@
 from setuptools import setup, find_packages
+import sys
 
+if sys.version_info < (3,):
+    raise ImportError(
+    """You are running SCATE 1.0 on Python 2.
+    Please upgrade to Python 3 and try again.
+    """)
 
 install_requires = [
     'lxml>=4.2.5',
@@ -11,6 +17,7 @@ install_requires = [
 setup(
     name='SCATE',
     version='1.0',
+    python_requires=">=3.4",
     packages=find_packages(),
     include_package_data=True,
     author='Lakshmi Manohar Rao Velicheti',
