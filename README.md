@@ -8,6 +8,9 @@ understand when a given SCA tool will identify a potential flaw in the
 source code. SCATE is designed to be extensible to many different SCA tools, 
 code bases, and reporting formats.
 
+
+Lakshmi Manohar Rao Velicheti, Dennis C. Feiock, Manjula Peiris, Rajeev Raje, and James H. Hill. 2014. **Towards modeling the behavior of static code analysis tools.** *Proc. of the 9th Annual Cyber and Information Security Research Conference '14.* DOI: [https://doi.org/10.1145/2602087.2602101](https://doi.org/10.1145/2602087.2602101)
+
 ## System Requirements
 
 * [Python 3.4](https://www.python.org/downloads/) or later
